@@ -41,7 +41,7 @@ app.get("/get", async (req, res) => {
     
     const allUsers = await pool.query("SELECT * FROM userdb");
 
-    res.json(allUsers.rows).status(200);
+    res.status(201).json(allUsers.rows);
     
   } catch (error) {
     console.log(error);
