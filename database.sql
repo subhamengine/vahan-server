@@ -1,0 +1,9 @@
+CREATE DATABASE vahan;
+
+CREATE TABLE IF NOT EXISTS "user" (
+        id SERIAL PRIMARY KEY,
+        username VARCHAR(50) NOT NULL,
+        email VARCHAR(100) UNIQUE NOT NULL,
+        mob VARCHAR(10) UNIQUE NOT NULL,
+        dob VARCHAR(15) NOT NULL
+      );
