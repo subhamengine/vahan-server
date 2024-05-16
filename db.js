@@ -15,7 +15,7 @@ const pool = new Pool({
     try {
       const client = await pool.connect();
   
-      console.log('Connected to ScaleGrid PostgreSQL cluster successfully!');
+      console.log('Connected to PostgreSQL cluster successfully!');
   
   
   
@@ -23,8 +23,8 @@ const pool = new Pool({
       CREATE TABLE IF NOT EXISTS "userdb" (
         id SERIAL PRIMARY KEY,
         username VARCHAR(50) NOT NULL,
-        email VARCHAR(100) UNIQUE NOT NULL,
-        mob VARCHAR(10) UNIQUE NOT NULL,
+        email VARCHAR(100)  NOT NULL,
+        mob VARCHAR(10)  NOT NULL,
         dob VARCHAR(15) NOT NULL
       );
     `;
